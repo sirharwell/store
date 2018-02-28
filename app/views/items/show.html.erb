@@ -1,0 +1,5 @@
+<h1><%= @sub.name %> - <%= @item.name %></h1>
+
+<%= link_to 'Edit item', edit_sub_item_path([@sub, @item]) %>
+<%= link_to 'Delete item', [@sub, @item], method: :delete %>
+<%= link_to 'Back To items', sub_items_path(@sub) %>
