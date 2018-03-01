@@ -1,7 +1,12 @@
-<h1>Click an Item To View Content</h1>
-<%= link_to 'Create a new item', new_sub_item_path(@sub) %>
-<ul>
+<h3>Click an Item To View Content</h3>
+<h1>
+<ul class= 32-font>
   <% @items.each do |item| %>
     <li><%= link_to item.name, [@sub, item] %></li>
   <% end %>
 </ul>
+</h1>
+<button class="silver btn-small"><%= link_to 'Create a new item', new_sub_path %>
+</button>
+<button class="grey lighten-3 btn-small"><%= link_to 'Back', new_sub_path %>
+</button>

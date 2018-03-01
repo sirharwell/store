@@ -1,7 +1,9 @@
-<h1>Click a Department To View Content</h1>
-<%= link_to 'Create a new department', new_sub_path %>
-<ul>
+<h3>Click a Department To View Content</h3>
+<h1><ul>
   <% @subs.each do |sub| %>
-    <li><%= link_to sub.name, sub %></li>
+    <li> * <%= link_to sub.name, sub %></li>
   <% end %>
-</ul>
+</ul></h1>
+
+<button class="silver btn-small"><%= link_to 'Create a new department', new_sub_path %>
+</button>
